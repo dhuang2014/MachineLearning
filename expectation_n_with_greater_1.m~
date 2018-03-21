@@ -1,0 +1,12 @@
+a = 0;
+j = 1;
+for j = 1:10000
+    for i = 1:100
+        a = a + rand(1);
+        if a>= 1
+            b(j) = i;
+            break;
+            a = 0;
+        end
+    end
+end
